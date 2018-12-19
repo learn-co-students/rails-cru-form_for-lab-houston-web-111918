@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+<<<<<<< HEAD
   def index
     @songs = Song.all
   end
@@ -27,4 +28,6 @@ class SongsController < ApplicationController
   def song_params
     params.require(:song).permit(:name,:artist_id,:genre_id)
   end
+=======
+>>>>>>> 319724daa99a6b657b1f6dacceff7031da19a668
 end
