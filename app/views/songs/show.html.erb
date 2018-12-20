@@ -1,0 +1,13 @@
+<><%= link_to "Song List", songs_path%>
+
+<h1>Song Detail :</h1>
+
+
+
+<h1><%=@song.name%></h1>
+
+
+
+
+<%= button_to "Edit this Song", edit_song_url, :method => :get%>
+<%= button_to "Delete this Song", @song, :method => :delete%>

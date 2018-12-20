@@ -1,0 +1,15 @@
+<><%= link_to "Artist List", artists_path%>
+
+<h1>Artist Detail :</h1>
+
+
+
+<h1><%=@artist.name%></h1>
+<h2><%=@artist.bio%></h2>
+
+
+<h2>My songs are: <%=@artist.songs.map {|song| song.name}.join(", ")%></h2>
+
+
+<%= button_to "Edit this Artist", edit_artist_url, :method => :get%>
+<%= button_to "Delete this Artist", @artist, :method => :delete%>

@@ -1,0 +1,13 @@
+<><%= link_to "Genre List", genres_path%>
+
+<h1>Genre Detail :</h1>
+
+
+
+<h1><%=@genre.name%></h1>
+
+
+
+
+<%= button_to "Edit this Genre", edit_genre_url, :method => :get%>
+<%= button_to "Delete this Genre", @genre, :method => :delete%>
