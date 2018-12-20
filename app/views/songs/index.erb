@@ -1,1 +1,4 @@
 <h1>Alla Songs</h1>
+  <% @song.each do |song|%>
+    <div><%= link_to song.name, song%>
+  <% end %>

@@ -1,1 +1,6 @@
 <h1>Sign You n Yer Mates Up for Punk Rocks!</h1>
+  <%= form_with model: @artists do |form| %>
+    <p>Band Name: <%= form.text_field :name %><p>
+    <p>Band Bio: <%= form.text_field :bio %><p>
+  <% end %>
+
