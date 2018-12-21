@@ -1,0 +1,9 @@
+<h1>Update <%= @artist.name %></h1>
+
+<%= form_for @artist do |f| %>
+  <div>
+    <%= f.text_field :name, placeholder: "Enter name" %><br><br>
+    <%= f.text_area :bio, placeholder: "Enter bio" %><br><br>
+    <%= f.submit %>
+  </div>
+<% end %>
