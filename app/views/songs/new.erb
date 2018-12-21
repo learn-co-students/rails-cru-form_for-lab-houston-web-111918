@@ -1,0 +1,8 @@
+<h1>Add Song</h1>
+
+<%= form_for Song.new do |f| %>
+  <%= f.text_field :name, placeholder: 'Song name' %><br><br>
+  <%= f.collection_select :artist_id, Artist.all, :id, :name %><br><br>
+  <%= f.collection_select :genre_id, Genre.all, :id, :name %><br><br>
+  <%= f.submit %>
+<% end %>
